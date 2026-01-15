@@ -1,13 +1,10 @@
 {
-  "name": "schack-quiz",
+  "name": "slidev-tdd-with-ai",
   "private": true,
   "scripts": {
     "dev": "slidev slides.md --open",
-    "dev:latt": "slidev latt.md --open",
-    "dev:medel": "slidev medel.md --open",
-    "dev:svar": "slidev svar.md --open",
-    "build:local": "slidev build slides.md --out dist --base / & slidev build latt.md --out dist/latt --base /latt/ & slidev build medel.md --out dist/medel --base /medel/ & slidev build svar.md --out dist/svar --base /svar/ & wait",
-    "build": "slidev build slides.md --out dist --base /schack-quiz/ & slidev build latt.md --out dist/latt --base /schack-quiz/latt/ & slidev build medel.md --out dist/medel --base /schack-quiz/medel/ & slidev build svar.md --out dist/svar --base /schack-quiz/svar/ & wait",
+    "build": "slidev build slides.md --out dist --base /slidev-tdd-with-ai/",
+    "build:local": "slidev build slides.md --out dist --base /",
     "serve": "pnpm build:local && npx serve dist -p 3000",
     "preview": "npx serve dist -p 3000"
   },

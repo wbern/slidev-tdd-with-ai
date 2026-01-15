@@ -27,17 +27,8 @@ jobs:
 
       - run: pnpm install
 
-      - name: Build main menu
+      - name: Build slides
         run: pnpm slidev build slides.md --base /${{ github.event.repository.name }}/ --out dist
-
-      - name: Build latt quiz
-        run: pnpm slidev build latt.md --base /${{ github.event.repository.name }}/latt/ --out dist/latt
-
-      - name: Build medel quiz
-        run: pnpm slidev build medel.md --base /${{ github.event.repository.name }}/medel/ --out dist/medel
-
-      - name: Build svar quiz
-        run: pnpm slidev build svar.md --base /${{ github.event.repository.name }}/svar/ --out dist/svar
 
       - uses: actions/upload-pages-artifact@v3
         with:
