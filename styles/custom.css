@@ -1,0 +1,11 @@
+/* Semantic color variables */
+:root {
+  --muted: rgba(255, 255, 255, 0.5);
+  --option-1: #3b82f6; /* blue-500 */
+  --option-x: #eab308; /* yellow-500 */
+  --option-2: #22c55e; /* green-500 */
+}
+
+html:not(.dark) {
+  --muted: rgba(0, 0, 0, 0.5);
+}
